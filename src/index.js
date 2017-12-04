@@ -10,12 +10,7 @@ import store from "./store";
 
 const Index = () => (
   <Provider store={store}>
-    <HashRouter>
-      <Switch>
-        <Route exact path="/" render={() => <App />} />
-        <Route  path="/Janeth-Portafolio" render={ () => <Redirect to="/"/>}/>
-      </Switch>
-    </HashRouter>
+    <App />
   </Provider>
 ); 
 
