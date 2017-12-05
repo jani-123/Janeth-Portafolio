@@ -21,44 +21,29 @@ const Contactame = () => {
   return (
     <div className="container-fluid" id="Contactame">
       <div className="row">
-        <div className="col-sm-12 col-xs-12 col-md-8 col-lg-8 datos">
-          <div className="col-sm-12 col-xs-12 col-md-8 col-lg-8"><h1>Contáctame</h1><hr/></div>
-          <div className="col-sm-12 col-xs-12 col-md-8 col-lg-8">
-            <p>Si te gusto mi trabajo puedes contactarme mandandome un mensaje o llamandome al número telefónico.</p>
+        <div className="col-sm-12 col-xs-12 col-md-12 col-lg-12 datos">
+          <div className="col-sm-12 col-xs-12 col-md-12 col-lg-12"><h1>Contáctame</h1><hr/></div>
+          <div className="col-sm-12 col-xs-12 col-md-12 col-lg-12">
+            <p id="parrafo">Si te gusto mi trabajo puedes contactarme mandandome un mensaje o llamandome al número telefónico.</p>
           </div>
-          <div className="col-sm-12 col-xs-12 col-md-8 col-lg-8 icons">
-            <button className="btn btn-glyt"><span className="glyphicon glyphicon-map-marker" aria-hidden="true"></span></button>
-            <p>El Pedregal C-3 Paucarpata</p>
+          <div className="col-sm-12 col-xs-12 col-md-12 col-lg-12 icons">
+            <div className="col-sm-12 col-xs-12 col-md-4 col-lg-4">
+              <span className="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+              <p id="datitos">El Pedregal C-3 Paucarpata</p>
+            </div>
+            <div className="col-sm-12 col-xs-12 col-md-4 col-lg-4">
+              <span className="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+              <p id="datitos">janina.rqa@gmail.com</p>
+            </div>
+            <div className="col-sm-12 col-xs-12 col-md-4 col-lg-4">
+              <span className="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+              <p id="datitos">985-656497 - (054)-462944</p>
+            </div>
           </div>
-          <div className="col-sm-12 col-xs-12 col-md-8 col-lg-8 icons">
-            <button className="btn btn-glyt"><span className="glyphicon glyphicon-envelope" aria-hidden="true"></span></button>
-            <p>janina.rqa@gmail.com</p>
-          </div>
-          <div className="col-sm-12 col-xs-12 col-md-8 col-lg-8 icons cono">
-            <button className="btn btn-glyt"><span className="glyphicon glyphicon-earphone" aria-hidden="true"></span></button>
-            <p>985-656497 - (054)-462944</p>
-          </div>
-          <div className="col-sm-12 col-xs-12 col-md-8 col-lg-8 icons cono icons-descarga">
-            <a href="https://github.com/jani-123/Janeth-Portafolio/raw/master/JANETH-CV.pdf"><button className="btn btn-glyt-descarga"><span className="glyphicon glyphicon-download-alt" aria-hidden="true"></span><strong> CV</strong></button></a>
+          <div className="col-sm-12 col-xs-12 col-md-12 col-lg-12 icons-descarga">
+            <a href="https://github.com/jani-123/Janeth-Portafolio/raw/master/JANETH-CV.pdf"><button className="btn btn-glyt-descarga-redes"><span className="glyphicon glyphicon-download-alt" aria-hidden="true"></span><strong> CV</strong></button></a>
             <a href="https://www.linkedin.com/in/janeth-rocio-quispe-apaza-0b1a90150/"><button className="btn btn-glyt-descarga-redes"><i class="fa fa-2x fa-linkedin" aria-hidden="true"></i></button></a>
-            <a href="https://www.facebook.com/janeth.quispeapaza?ref=bookmarks"><button className="btn btn-glyt-descarga-redes"><i class="fa fa-2x fa-facebook" aria-hidden="true"></i></button></a>
             <a href="https://github.com/jani-123"><button className="btn btn-glyt-descarga-redes"><i class="fa fa-2x fa-github" aria-hidden="true"></i></button></a>
-          </div>
-        </div>
-        <div className="col-sm-12 col-xs-12 col-md-4 col-lg-4 datos-person">
-          <div className="formulario">
-            <form action="//formspree.io/janina.rqa@gmail.com" method="POST">
-              <div className="form-group">
-                <input type="text" className="form-control" id="text" placeholder="Your Name*" required />
-              </div>
-              <div className="form-group">
-                <input type="email" className="form-control" id="email" placeholder="Your Email*" required />
-              </div>
-              <div className="form-group">
-                <textarea className="form-control" rows="5" id="comment" placeholder="Message*" required ></textarea>
-              </div>
-              <button type="submit" className="btn btn-default btn-lg">Enviar</button>
-            </form>
           </div>
         </div>
         <footer>
@@ -80,13 +65,16 @@ const Portafolio = () => {
           <hr/>
         </div>
         <div id="fotos">
-          <figure className="snip1548"><img src={uno} alt="sample114" />
-            <figcaption>
-              <h3>Food Center</h3>
-              <a href="https://jani-123.github.io/Japanesefood/" className="demos"><h5>Demo</h5></a>
-              <a href="https://github.com/jani-123/Japanesefood" className="demos"><h5>GitHub</h5></a>
-            </figcaption>
-          </figure>
+          <div className="col-md-4">
+            <figure className="snip1548"><img src={uno} alt="sample114" />
+              <figcaption>
+                <h3>Food Center</h3>
+                <a href="https://jani-123.github.io/Japanesefood/" className="demos"><h5>Demo</h5></a>
+                <a href="https://github.com/jani-123/Japanesefood" className="demos"><h5>GitHub</h5></a>
+              </figcaption>
+            </figure>
+          </div>
+          <div className="col-md-4">
           <figure className="snip1548"><img src={dos} alt="sample114" />
             <figcaption>
               <h3>Trello</h3>
@@ -94,6 +82,8 @@ const Portafolio = () => {
               <a href="https://github.com/jani-123/TrelloFirebase-Redux" className="demos"><h5>GitHub</h5></a>
             </figcaption><a href="#"></a>
           </figure>
+          </div>
+          <div className="col-md-4">
           <figure className="snip1548"><img src={tres} alt="sample115" />
             <figcaption>
               <h3>Trivia</h3>
@@ -101,6 +91,8 @@ const Portafolio = () => {
               <a href="https://github.com/jani-123/REACT-TRIVIA" className="demos"><h5>GitHub</h5></a>
             </figcaption><a href="#"></a>
           </figure>
+          </div>
+          <div className="col-md-4">
           <figure className="snip1548"><img src={cuatro} alt="sample114" />
             <figcaption>
               <h3>Lab-Studio</h3>
@@ -108,6 +100,8 @@ const Portafolio = () => {
               <a href="https://github.com/jani-123/Lab-studio" className="demos"><h5>GitHub</h5></a>
             </figcaption><a href="#"></a>
           </figure>
+          </div>
+          <div className="col-md-4">
           <figure className="snip1548"><img src={cinco} alt="sample114" />
             <figcaption>
               <h3>FreeLancer</h3>
@@ -115,6 +109,8 @@ const Portafolio = () => {
               <a href="https://github.com/jani-123/FreeLanze" className="demos"><h5>GitHub</h5></a>
             </figcaption><a href="#"></a>
           </figure>
+          </div>
+          <div className="col-md-4">
           <figure className="snip1548"><img src={seis} alt="sample115" />
             <figcaption>
               <h3>Lyft</h3>
@@ -122,6 +118,7 @@ const Portafolio = () => {
               <a href="https://github.com/jani-123/Lyft-CarII" className="demos"><h5>GitHub</h5></a>
             </figcaption><a href="#"></a>
           </figure>
+          </div>
         </div>
       </div>
     </div>

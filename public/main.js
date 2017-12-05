@@ -37,6 +37,10 @@ document.addEventListener('DOMContentLoaded', function (event) {
   StartTextAnimation(0);
 });
 
+
+$(document).ready(function(){
+
+
 ///    control scrol
 
 // Sticky Header
@@ -96,3 +100,5 @@ $(".hover").mouseleave(
     $(this).removeClass("hover");
   }
 );
+
+})
