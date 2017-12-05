@@ -22,7 +22,7 @@ const Contactame = () => {
     <div className="container-fluid" id="Contactame">
       <div className="row">
         <div className="col-sm-12 col-xs-12 col-md-8 col-lg-8 datos">
-          <div className="col-sm-12 col-xs-12 col-md-8 col-lg-8"><h1>Contáctame</h1></div>
+          <div className="col-sm-12 col-xs-12 col-md-8 col-lg-8"><h1>Contáctame</h1><hr/></div>
           <div className="col-sm-12 col-xs-12 col-md-8 col-lg-8">
             <p>Si te gusto mi trabajo puedes contactarme mandandome un mensaje o llamandome al número telefónico.</p>
           </div>
@@ -38,13 +38,16 @@ const Contactame = () => {
             <button className="btn btn-glyt"><span className="glyphicon glyphicon-earphone" aria-hidden="true"></span></button>
             <p>985-656497 - (054)-462944</p>
           </div>
-          <div className="col-sm-12 col-xs-12 col-md-8 col-lg-8 icons cono">
-            <a href="https://github.com/jani-123/jani-123.github.io/raw/master/static/media/JANETH-CV.pdf"><button className="btn btn-glyt descarga"><span className="glyphicon glyphicon-download-alt" aria-hidden="true"></span> CV</button></a>
+          <div className="col-sm-12 col-xs-12 col-md-8 col-lg-8 icons cono icons-descarga">
+            <a href="https://github.com/jani-123/Janeth-Portafolio/raw/master/JANETH-CV.pdf"><button className="btn btn-glyt-descarga"><span className="glyphicon glyphicon-download-alt" aria-hidden="true"></span><strong> CV</strong></button></a>
+            <a href="https://www.linkedin.com/in/janeth-rocio-quispe-apaza-0b1a90150/"><button className="btn btn-glyt-descarga-redes"><i class="fa fa-2x fa-linkedin" aria-hidden="true"></i></button></a>
+            <a href="https://www.facebook.com/janeth.quispeapaza?ref=bookmarks"><button className="btn btn-glyt-descarga-redes"><i class="fa fa-2x fa-facebook" aria-hidden="true"></i></button></a>
+            <a href="https://github.com/jani-123"><button className="btn btn-glyt-descarga-redes"><i class="fa fa-2x fa-github" aria-hidden="true"></i></button></a>
           </div>
         </div>
         <div className="col-sm-12 col-xs-12 col-md-4 col-lg-4 datos-person">
           <div className="formulario">
-            <form>
+            <form action="//formspree.io/janina.rqa@gmail.com" method="POST">
               <div className="form-group">
                 <input type="text" className="form-control" id="text" placeholder="Your Name*" required />
               </div>
@@ -60,13 +63,7 @@ const Contactame = () => {
         </div>
         <footer>
           <div className="footer">
-            <div className="nombre">
-              <div className="jr-songTitle">
-                <a href="https://www.linkedin.com/in/janeth-rocio-quispe-apaza-0b1a90150/"><i class="fa fa-linkedin-square icons" aria-hidden="true"></i></a>
-                <a href="https://www.facebook.com/janeth.quispeapaza?ref=bookmarks"><i class="fa fa-facebook-square icons" aria-hidden="true"></i></a>
-                <a href="https://github.com/jani-123"><i class="fa fa-github-square icons" aria-hidden="true"></i></a>
-              </div>
-            </div>
+            <p><strong><i class="fa fa-copyright" aria-hidden="true"></i> Janeth Rocio Quispe Apaza - 2017</strong></p>
           </div>
         </footer>
       </div>
@@ -80,6 +77,7 @@ const Portafolio = () => {
       <div className="row">
         <div className="col-sm-12 col-xs-12 col-md-12 col-lg-12 portf-title" >
           <h1>Portafolio</h1>
+          <hr/>
         </div>
         <div id="fotos">
           <figure className="snip1548"><img src={uno} alt="sample114" />
@@ -124,20 +122,6 @@ const Portafolio = () => {
               <a href="https://github.com/jani-123/Lyft-CarII" className="demos"><h5>GitHub</h5></a>
             </figcaption><a href="#"></a>
           </figure>
-          <figure className="snip1548"><img src={siete} alt="sample115" />
-            <figcaption>
-              <h3>Courses</h3>
-              <a href="https://jani-123.github.io/Simple-Routing/" className="demos"><h5>Demo</h5></a>
-              <a href="https://github.com/jani-123/Simple-Routing" className="demos"><h5>GitHub</h5></a>
-            </figcaption><a href="#"></a>
-          </figure>
-          <figure className="snip1548"><img src={ocho} alt="sample115" />
-            <figcaption>
-              <h3>Tea Lovers</h3>
-              <a href="https://jani-123.github.io/Tea-Lovers/" className="demos"><h5>Demo</h5></a>
-              <a href="https://github.com/jani-123/Tea-Lovers" className="demos"><h5>GitHub</h5></a>
-            </figcaption><a href="#"></a>
-          </figure>
         </div>
       </div>
     </div>
@@ -151,6 +135,7 @@ const Habilidades = () => {
         <div className="col-sm-12 col-xs-12 col-md-4 col-lg-4 contenido">
           <div className="col-sm-12 col-xs-12 col-md-12 col-lg-12">
             <h1>Habilidades</h1>
+            <hr/>
           </div>
           <div className="col-sm-12 col-xs-12 col-md-12 col-lg-12">
             <img src={hacka} className="img-responsive img-rounded hacka" />
@@ -233,6 +218,7 @@ const AcercadeMi = () => {
         <div className="col-sm-12 col-xs-12 col-md-8 col-lg-8 descripcion">
           <div className="col-sm-12 col-xs-12 col-md-12 col-lg-12">
             <h1 id="mio">Acerca de Mí</h1>
+            <hr/>
           </div>
           <div className="col-sm-12 col-xs-12 col-md-12 col-lg-12">
             <p id="sobreMi">Me encanta el mundo tecnológico y aprender nuevas tecnologías.
@@ -254,7 +240,7 @@ const AcercadeMi = () => {
           </div>
         </div>
         <div className="col-sm-12 col-xs-12 col-md-4 col-lg-4 caja-foto">
-          <img src={chio} className="img-rounded img-responsive foto" />
+          <img src={chio} className="img-rounded img-responsive img-thumbnail foto"/>
         </div>
       </div>
     </div>
@@ -282,10 +268,12 @@ const NewIntroduct = () => {
           </nav>
         </div>
       </header>
-      <div className=" col-sm-12 col-xs-12 col-md-12 col-lg-12 texto">
-        <h1></h1>
-        <a href="#Acerca"><button className="btn btn-lg btn-about">Acerca De Mí</button></a>
+      <div className="col-sm-12 col-xs-12 col-md-12 col-lg-12 texto">
+        <h1 id="frase"></h1>
       </div>
+      <a href="#Acerca"><div class="col-sm-12 col-xs-12 col-md-12 col-lg-12 mouse">
+        <span></span>
+      </div></a>
     </div>
   )
 }
