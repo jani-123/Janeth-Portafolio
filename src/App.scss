@@ -24,7 +24,7 @@ $color-skill: #323232;
   position: fixed;
   top: 0px;
   max-height: 70px;
-  z-index: 999;
+  z-index: 1000;
   width: 100%;
   padding-top: 17px;
   background: none;
@@ -129,6 +129,7 @@ nav ul a {
   position: relative;
   padding: 0 0%;
 }
+
 * {
   box-sizing: border-box;
 }
@@ -217,77 +218,65 @@ nav ul a {
   display: inline-block;
   padding: 30px;
   background-color: rgba(245, 240, 240, 0.753);
-  height: 684px;
   text-align: center;
+  height: 623px;
   h1{
-    margin-top: 45px;
+    margin-top: 35px;
     font-family: $font-subtitle;
-    font-size: 8em;
+    font-size: 6em;
     text-align: center;
   }
-  hr{
-    border: 2px solid rgb(27, 37, 46);
-    width: 40%;
-    margin-left: 30%;
-  }
   p{
-    width: 70%;
-    font-size: 1.3em;
+    // width: 70%;
+    font-size: 1.2em;
     text-align: justify;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 50px;
-    margin-left: 15%;
+    // margin-left: 15%;
     font-family: $font-textbody;
   }
 }
+
 .caja-foto{
-  display: inline-block;
-  height: 684px;
   background-color:rgba(202, 198, 198, 0.438);
 }
+
 .foto{
-    width: 70%;
-    height: 400px;
-    margin-top: 150px;
-    margin-left: 70px;
+    // width: 50%;
+    margin:0;
 }
 .gustos{ 
   font-size: 4.6em;
-  margin-top: 15px;
+  // margin-top: 5px;
 }
 /* Fin Acerca de Mi */
 
 /*  Seccion Habilidades */
 .contenido{
-  display: inline-block;
+  ///display: inline-block;
   padding: 30px;
+  height: 581px;
   background-color: rgba(202, 198, 198, 0.438);
-  height: 660px; 
   h1{
     font-family: $font-subtitle;
-    margin-top: 60px;
+    margin-top: 20px;
     text-align: center;
     font-size: 5em;
-  }
-  hr{
-    border: 2px solid rgb(27, 37, 46);
-    width: 69%;
-    margin-left: 17%;
   }
   p{
     font-family: $font-textbody;
   }
 }
 .hacka{
-  margin-top: 80px;
-  margin-left: 10px;
+  // padding: 30px;
+  
 }
 .bars{
   font-family: $font-textbody;
   display: inline-block;
   padding: 30px;
   background-color: rgba(245, 240, 240, 0.753);
-  height: 660px;
+  // height: 660px; 
 }
 .tooltip{ 
   position:relative;
@@ -296,7 +285,7 @@ nav ul a {
 .tooltip > .tooltip-inner {background-color: #eebf3f; padding:5px 15px; color:rgb(23,44,66); font-weight:bold; font-size:13px;}
 .popOver + .tooltip > .tooltip-arrow {    border-left: 5px solid transparent; border-right: 5px solid transparent; border-top: 5px solid #eebf3f;}
 .barWrapper{
-  margin-top: 45px; 
+  // margin-top: 10px; 
 }
 section{
   margin:140px auto; 
@@ -324,26 +313,21 @@ section{
   background-color: $color-white;
   color: $color-black;
   text-align: center;
-  width: 100%;
+  // width: 100%;
   font-size: 3em;
   margin-bottom: 50px;
 }
 .portf-title{
-  margin-top: 30px;
+  // margin-top: 20px;
   text-align: center;
   h1{
     font-family: $font-subtitle;
     font-size: 6em;
-    margin-top: 70px;
-  }
-  hr{
-    border: 2px solid rgb(27, 37, 46);
-    width: 17%;
-    margin-left: 41%;
+    margin-top: 40px;
   }
 }
 .demos{
-  margin: 10px;
+  // margin: 10px;
 }
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 .snip1548 {
@@ -351,7 +335,7 @@ section{
   position: relative;
   display: inline-block;
   overflow: hidden;
-
+  margin-bottom: 40px;
  // width: 100%;
   color: #ffffff;
   font-size: 16px;
@@ -461,7 +445,6 @@ section{
   display: inline-block;
   padding: 10px;
   background-color: rgba(245, 240, 240, 0.753);
-  height: 91vh;
   text-align: center;
   h1{
     margin-top: 40px;
@@ -472,11 +455,6 @@ section{
     font-size: 1.5em;
     margin-top: 20px;
     margin-bottom: 20px;
-  }
-  hr{
-    border: 2px solid rgb(27, 37, 46);
-    width: 25%;
-    margin-left: 38%;
   }
 }
 
@@ -490,7 +468,6 @@ section{
     height: 7vh;
 }
 .icons{
- // display:inline-flex;
   margin-left: 0px;
   font-size: 1.4em;
   margin-top: 40px;
@@ -529,26 +506,118 @@ section{
   }
 }
 
+.vcenter {
+  padding:40px 0;
+}
+
 /* Trabajando Medias Query */
-@media screen and (max-width:768px) {
+@media screen and (max-width:992px) {
   .descripcion{
-    height: auto;
+    // background-color: green;
+    height: auto; 
+    h1{
+      // font-size: 1em;
+    }
+  }
+  .texto{
     h1{
       font-size: 1em;
     }
   }
-  .datos{
-    height: auto;
-  }
   .contenido{
-    height: auto;
     background-color: rgba(245, 240, 240, 0.753);
+    height: auto;
   }
   .bars{
     background-color: rgba(202, 198, 198, 0.438);
   }
-  .datos-person{
-    height: auto;
+   .btn-glyt-descarga-redes {
+    width: 20%;
   }
-
+  // nav{
+  //   width: 70%;
+  // }
+}
+@media screen and (max-width: 372px){
+  .descripcion{
+    // background-color: green;
+    height: auto; 
+    h1{
+      font-size: 3em;
+    }
+    p{
+      font-size: 1em;
+    }
+  }
+  .texto{
+    h1{
+      font-size: 1em;
+    }
+  }
+  .contenido{
+    background-color: rgba(245, 240, 240, 0.753);
+    height: auto;
+    h1{
+      font-size: 4em;
+    }
+  }
+  .bars{
+    background-color: rgba(202, 198, 198, 0.438);
+  }
+  .datos{
+    h1{
+      font-size: 4em;
+    }
+  }
+  .btn-glyt-descarga-redes {
+    width: 20%;
+  }
+  .portf-title {
+    h1 {
+    font-size: 5em;
+    }
+  }
+}
+@media screen and (max-width: 280px){
+  .descripcion{
+    // background-color: green;
+    height: auto; 
+    h1{
+      font-size: 2em;
+    }
+    p{
+      font-size: 0.7em;
+    }
+  }
+  .texto{
+    h1{
+      font-size: 0.8em;
+    }
+  }
+  .contenido{
+    background-color: rgba(245, 240, 240, 0.753);
+    height: auto;
+    h1{
+      font-size: 2.4em;
+    }
+  }
+  .bars{
+    background-color: rgba(202, 198, 198, 0.438);
+  }
+  .datos{
+    h1{
+      font-size: 2.5em;
+    }
+  }
+  .btn-glyt-descarga-redes {
+    width: 25%;
+  }
+  .portf-title {
+    h1 {
+    font-size: 3em;
+    }
+  }
+  .email{
+    font-size: 1em;
+  }
 }

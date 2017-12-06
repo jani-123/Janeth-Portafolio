@@ -33,7 +33,7 @@ const Contactame = () => {
             </div>
             <div className="col-sm-12 col-xs-12 col-md-4 col-lg-4">
               <span className="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-              <p id="datitos">janina.rqa@gmail.com</p>
+              <p id="datitos" className="email">janina.rqa@gmail.com</p>
             </div>
             <div className="col-sm-12 col-xs-12 col-md-4 col-lg-4">
               <span className="glyphicon glyphicon-earphone" aria-hidden="true"></span>
@@ -62,10 +62,9 @@ const Portafolio = () => {
       <div className="row">
         <div className="col-sm-12 col-xs-12 col-md-12 col-lg-12 portf-title" >
           <h1>Portafolio</h1>
-          <hr/>
         </div>
         <div id="fotos">
-          <div className="col-md-4">
+          <div className="col-md-4 col-sm-6 col-xs-12">
             <figure className="snip1548"><img src={uno} alt="sample114" />
               <figcaption>
                 <h3>Food Center</h3>
@@ -74,7 +73,7 @@ const Portafolio = () => {
               </figcaption>
             </figure>
           </div>
-          <div className="col-md-4">
+          <div className="col-md-4 col-sm-6 col-xs-12">
           <figure className="snip1548"><img src={dos} alt="sample114" />
             <figcaption>
               <h3>Trello</h3>
@@ -83,7 +82,7 @@ const Portafolio = () => {
             </figcaption><a href="#"></a>
           </figure>
           </div>
-          <div className="col-md-4">
+          <div className="col-md-4 col-sm-6 col-xs-12">
           <figure className="snip1548"><img src={tres} alt="sample115" />
             <figcaption>
               <h3>Trivia</h3>
@@ -92,7 +91,7 @@ const Portafolio = () => {
             </figcaption><a href="#"></a>
           </figure>
           </div>
-          <div className="col-md-4">
+          <div className="col-md-4 col-sm-6 col-xs-12">
           <figure className="snip1548"><img src={cuatro} alt="sample114" />
             <figcaption>
               <h3>Lab-Studio</h3>
@@ -101,7 +100,7 @@ const Portafolio = () => {
             </figcaption><a href="#"></a>
           </figure>
           </div>
-          <div className="col-md-4">
+          <div className="col-md-4 col-sm-6 col-xs-12">
           <figure className="snip1548"><img src={cinco} alt="sample114" />
             <figcaption>
               <h3>FreeLancer</h3>
@@ -110,7 +109,7 @@ const Portafolio = () => {
             </figcaption><a href="#"></a>
           </figure>
           </div>
-          <div className="col-md-4">
+          <div className="col-md-4 col-sm-6 col-xs-12">
           <figure className="snip1548"><img src={seis} alt="sample115" />
             <figcaption>
               <h3>Lyft</h3>
@@ -132,9 +131,6 @@ const Habilidades = () => {
         <div className="col-sm-12 col-xs-12 col-md-4 col-lg-4 contenido">
           <div className="col-sm-12 col-xs-12 col-md-12 col-lg-12">
             <h1>Habilidades</h1>
-            <hr/>
-          </div>
-          <div className="col-sm-12 col-xs-12 col-md-12 col-lg-12">
             <img src={hacka} className="img-responsive img-rounded hacka" />
           </div>
         </div>
@@ -212,12 +208,11 @@ const AcercadeMi = () => {
   return (
     <div className="container-fluid about" id="Acerca">
       <div className="row">
-        <div className="col-sm-12 col-xs-12 col-md-8 col-lg-8 descripcion">
-          <div className="col-sm-12 col-xs-12 col-md-12 col-lg-12">
+        <div className="col-sm-12 col-xs-12 col-md-6 col-lg-8 descripcion">
+          <div className="col-sm-12">
             <h1 id="mio">Acerca de Mí</h1>
-            <hr/>
           </div>
-          <div className="col-sm-12 col-xs-12 col-md-12 col-lg-12">
+          <div className="col-sm-12">
             <p id="sobreMi">Me encanta el mundo tecnológico y aprender nuevas tecnologías.
               Soy desarrolladora Front-End Jr. Egresada de la carrera profesional de
               Ingeniería de sistemas. Con creatividad y paciencia he desarrollado aplicaciones
@@ -226,18 +221,22 @@ const AcercadeMi = () => {
               gusta escuchar música, ver películas y salir a comer helado con mis amigos.
             </p>
           </div>
-          <div className="col-sm-12 col-xs-12 col-md-4 col-lg-4">
-            <span className="glyphicon glyphicon-film gustos" aria-hidden="true"></span>
-          </div>
-          <div className="col-sm-12 col-xs-12 col-md-4 col-lg-4">
-            <span className="glyphicon glyphicon-headphones gustos" aria-hidden="true"></span>
-          </div>
-          <div className="col-sm-12 col-xs-12 col-md-4 col-lg-4">
-            <span className="glyphicon glyphicon-ice-lolly-tasted gustos" aria-hidden="true"></span>
+          <div className="col-sm-12">
+            <div className="col-sm-12 col-xs-12 col-md-4 col-lg-4">
+              <span className="glyphicon glyphicon-film gustos" aria-hidden="true"></span>
+            </div>
+            <div className="col-sm-12 col-xs-12 col-md-4 col-lg-4">
+              <span className="glyphicon glyphicon-headphones gustos" aria-hidden="true"></span>
+            </div>
+            <div className="col-sm-12 col-xs-12 col-md-4 col-lg-4">
+              <span className="glyphicon glyphicon-ice-lolly-tasted gustos" aria-hidden="true"></span>
+            </div>
           </div>
         </div>
         <div className="col-sm-12 col-xs-12 col-md-4 col-lg-4 caja-foto">
-          <img src={chio} className="img-rounded img-responsive img-thumbnail foto"/>
+          <div className="col-sm-6 col-md-10 col-md-offset-1 col-sm-offset-3 vcenter">
+            <img src={chio} className="img-responsive img-thumbnail foto"/>
+          </div>
         </div>
       </div>
     </div>
@@ -245,7 +244,7 @@ const AcercadeMi = () => {
 };
 const NewIntroduct = () => {
   return (
-    <div className="container-fluid">
+    <div className="container-fluid" id="Inicio">
       <img src={portada} className="selector"/>
       <header className="main_h">
         <div className="row">
@@ -256,7 +255,7 @@ const NewIntroduct = () => {
           </div>
           <nav>
             <ul>
-              <li><a href="#">Inicio</a></li>
+              <li><a href="#Inicio">Inicio</a></li>
               <li><a href="#Acerca">Acerca de Mí</a></li>
               <li><a href="#habilidades">Habilidades</a></li>
               <li><a href="#Portafolio">Portafolio</a></li>
